@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 
 export const Content = () => {
   return (
-    <section className="w-full relative flex justify-center">
+    <section className="w-full relative flex justify-center" id="sobre-mi">
       <div className="absolute top-64 w-8/12 z-50">
         <h2 className="inline-block font-barlow-semi text-5xl text-[#505050] border-b-2 border-[#D95276]">
           Sobre Mí
         </h2>
-        <div className="sobreMi flex flex-row align-middle items-center">
+        <div className="sobreMiText flex flex-row align-middle items-center">
           <div className="sobreMiTexto w-full relative">
             <p className="w-5/6 bg-white bg-opacity-20 backdrop-blur-lg drop-shadow-lg rounded-lg px-7 py-4 font-barlow-semi-light relative z-10">
               <span className="font-barlow-semi-bold">
@@ -95,7 +95,7 @@ export const Content = () => {
                 </defs>
               </svg>
             </div>
-             <div className="absolute top-[-80px] right-[-150px] z-0">
+            <div className="absolute top-[-80px] right-[-150px] z-0">
               <svg
                 width="204"
                 height="187"
@@ -125,8 +125,11 @@ export const Content = () => {
                   </linearGradient>
                 </defs>
               </svg>
-            </div> 
+            </div>
           </div>
+        </div>
+        <div className="sobreMiTecnologias">
+
         </div>
       </div>
     </section>

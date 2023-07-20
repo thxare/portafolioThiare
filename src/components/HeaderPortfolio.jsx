@@ -1,6 +1,18 @@
 import React from "react";
 
 export const HeaderPortfolio = () => {
+  const scrollToSection = (event) => {
+    event.preventDefault();
+    const targetId = event.target.getAttribute("href");
+    const linkToSection = document.querySelector(targetId);
+
+    if (linkToSection) {
+      linkToSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
   return (
     <>
       <header className="w-full h-screen relative min-h-[700px] max-h-fit flex justify-center items-center">
@@ -8,7 +20,11 @@ export const HeaderPortfolio = () => {
           <nav className="relative text-white my-12">
             <ul className="flex flex-row gap-12 font-barlow-semi">
               <li>
-                <a className="hover:border-b-2 hover:border-[#D95276]" href="#">
+                <a
+                  className="hover:border-b-2 hover:border-[#D95276]"
+                  href="#sobre-mi"
+                  onClick={scrollToSection}
+                >
                   Sobre mí
                 </a>
               </li>
