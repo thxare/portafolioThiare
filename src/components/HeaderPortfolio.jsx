@@ -3,22 +3,34 @@ import React from "react";
 export const HeaderPortfolio = () => {
   return (
     <>
-      <header className="w-full h-screen relative">
-        <div className="content z-50 absolute mx-32">
+      <header className="w-full h-screen relative min-h-[700px] max-h-fit flex justify-center items-center">
+        <div className=" w-8/12 content z-50">
           <nav className="relative text-white my-12">
             <ul className="flex flex-row gap-12 font-barlow-semi">
-              <li>Sobre mí</li>
-              <li>Proyectos</li>
-              <li>Contacto</li>
+              <li>
+                <a className="hover:border-b-2 hover:border-[#D95276]" href="#">
+                  Sobre mí
+                </a>
+              </li>
+              <li>
+                <a className="hover:border-b-2 hover:border-[#D95276]" href="#">
+                  Proyectos
+                </a>
+              </li>
+              <li>
+                <a className="hover:border-b-2 hover:border-[#D95276]" href="#">
+                  Contacto
+                </a>
+              </li>
             </ul>
           </nav>
-          <section className="flex flex-row gap-56 align-middle items-center mx-auto">
-            <div className="">
-              <img src="./principal.png" alt="imagen de Thiare sáez"/>
+          <section className="flex flex-row align-middle items-center mx-auto justify-between">
+            <div className="animate-fade-right animate-once animate-duration-500 animate-ease-linear animate-normal">
+              <img src="./principal.png" alt="imagen de Thiare sáez" />
             </div>
-            <div className="mainInfo flex flex-col items-center">
+            <div className="mainInfo flex flex-col items-center animate-fade-left animate-once animate-duration-500 animate-ease-linear animate-normal">
               <div className="info flex flex-col items-start">
-                <div className="text-2xl text-white font-barlow-semi-light">
+                <div className="text-2xl text-white font-barlow-semi-light ">
                   Hola 👋! Soy
                 </div>
                 <div className="flex flex-col justify-center items-center gap-y-2">
@@ -31,10 +43,14 @@ export const HeaderPortfolio = () => {
                 </div>
               </div>
               <div className="buttons w-full justify-between flex flex-row mt-6 items-center">
-                <button className="h-14 text-2xl text-white px-6 py-2 bg-[#D95276] rounded-md font-barlow-semi-light">
+                <a
+                  className=" text-2xl text-white px-6 py-3 bg-[#D95276] hover:bg-[#e8839e] rounded-md font-barlow-semi-light"
+                  href="./curriculum-espaniol.pdf"
+                  download
+                >
                   Currículum
-                </button>
-                <button className="h-14 text-2xl text-white px-6 py-2 rounded-md border border-white bg-[#6B4294] font-barlow-semi-light">
+                </a>
+                <button className="h-14 text-2xl text-white px-6 py-2 rounded-md border border-white bg-[#6B4294] hover:bg-[#8871a1] font-barlow-semi-light">
                   Contáctame
                 </button>
               </div>
@@ -53,7 +69,10 @@ export const HeaderPortfolio = () => {
                     <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
                   </svg>
                 </a>
-                <a href="https://www.linkedin.com/in/thiare-s%C3%A1ez-echeverr%C3%ADa-9402151ba/" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/thiare-s%C3%A1ez-echeverr%C3%ADa-9402151ba/"
+                  target="_blank"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -71,10 +90,9 @@ export const HeaderPortfolio = () => {
             </div>
           </section>
         </div>
-
         <div className="absolute w-full h-full bg-[#431273] z-0 top-0">
           <div className="w-full h-full relative">
-            <div className="absolute top-[-180px] right-[160px]">
+            <div className="absolute top-[-180px] right-[160px] ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="400"

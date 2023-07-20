@@ -6,6 +6,7 @@ export const Portafolio = () => {
   return (
     <>
       <HeaderPortfolio />
+      <Content />
     </>
   );
 };

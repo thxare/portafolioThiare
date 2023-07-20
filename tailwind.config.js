@@ -13,5 +13,10 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      fill: ["hover", "focus"], // esto activa las variantes de hover y focus para el relleno
+    },
+  },
+  plugins: [require("tailwindcss-animated")],
 };
