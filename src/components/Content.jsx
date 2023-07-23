@@ -128,7 +128,61 @@ export const Content = () => {
             </div>
           </div>
         </div>
-        <div className="sobreMiTecnologias">
+        <div className="sobreMiTecnologias flex flex-row justify-between align-middle mt-[151px] items-center">
+          <div className="frontend flex flex-col align-middle items-center w-1/3">
+            <div className="imagen">
+              <img src="./logoReact.png" alt="logoFrontend" />
+            </div>
+            <h3 className="font-barlow-semi text-[35px]">Frontend</h3>
+            <div className="tags w-full flex flex-row flex-wrap gap-2">
+              <div className=" text-[rgb(217,82,118)] border-2 rounded-md border-[#D95276] py-1 px-4">
+                HTML5
+              </div>
+              <div className="text-[rgb(217,82,118)] border-2 rounded-md border-[#D95276] py-1 px-4">
+                CSS3
+              </div>
+              <div className="text-[rgb(217,82,118)] border-2 rounded-md border-[#D95276] py-1 px-4">
+                Javascript
+              </div>
+              <div className="text-[rgb(217,82,118)] border-2 rounded-md border-[#D95276] py-1 px-4 align-middle items-center">
+                ReactJS
+              </div>
+            </div>
+          </div>
+          <div className="backend flex flex-col align-middle items-center w-56">
+            <div className="imagen">
+              <img src="./logoBackend.png" alt="logoFrontend" />
+            </div>
+            <h3 className="font-barlow-semi text-[35px]">Backend</h3>
+            <div className="tags w-full flex flex-row flex-wrap gap-2">
+              <div className=" text-[rgb(217,82,118)] border-2 rounded-md border-[#D95276] py-1 px-4">
+                NodeJS
+              </div>
+              <div className="text-[rgb(217,82,118)] border-2 rounded-md border-[#D95276] py-1 px-4">
+                MySQL
+              </div>
+              <div className="text-[rgb(217,82,118)] border-2 rounded-md border-[#D95276] py-1 px-4">
+                Express
+              </div>
+            </div>
+          </div>
+          <div className="herramientas flex flex-col align-middle items-center w-56">
+            <div className="imagen">
+              <img src="./herramientas.png" alt="logo de herramientas" />
+            </div>
+            <h3 className="font-barlow-semi text-[35px]">Herramientas</h3>
+            <div className="tags w-full flex flex-row flex-wrap gap-2">
+              <div className=" text-[rgb(217,82,118)] border-2 rounded-md border-[#D95276] py-1 px-4">
+                GIT
+              </div>
+              <div className="text-[rgb(217,82,118)] border-2 rounded-md border-[#D95276] py-1 px-4">
+                Github
+              </div>
+              <div className="text-[rgb(217,82,118)] border-2 rounded-md border-[#D95276] py-1 px-4">
+                Postman
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
