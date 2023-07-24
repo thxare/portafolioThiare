@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 export const Content = () => {
   return (
-    <section className="w-full relative flex justify-center" id="sobre-mi">
+    <section className="w-full h-[1000px] relative flex justify-center" id="sobre-mi">
       <div className="absolute top-64 w-8/12 z-50">
         <h2 className="inline-block font-barlow-semi text-5xl text-[#505050] border-b-2 border-[#D95276]">
           Sobre Mí
@@ -183,7 +183,6 @@ export const Content = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
