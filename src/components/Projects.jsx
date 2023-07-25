@@ -23,7 +23,7 @@ export const Projects = () => {
         </div>
 
         <div className="proyectos flex flex-row w-full gap-x-16 mt-14">
-        <div className="proyecto w-1/3 border-[#D95276] border-2 rounded-md ">
+          <div className="proyecto w-1/3 border-[#D95276] border-2 rounded-md ">
             <div className="w-full h-56 bg-slate-800"></div>
             <div className="w-full p-4">
               <h3 className="text-[rgb(217,82,118)]">Feria maipo</h3>
