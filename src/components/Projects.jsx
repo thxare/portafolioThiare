@@ -1,6 +1,6 @@
 export const Projects = () => {
   return (
-    <section className="w-full h-[800px] relative bg-[#F9F9F9] mt-40">
+    <section className="w-full h-[800px] relative bg-[#F9F9F9] mt-40" id="proyectos">
       <div className="absolute top-[-115px]">
         <svg
           width="1440"
@@ -23,16 +23,23 @@ export const Projects = () => {
         </div>
 
         <div className="proyectos flex flex-row w-full gap-x-16 mt-14">
-          <div className="proyecto w-1/3 border-[#D95276] border-2 rounded-md ">
-            <div className="w-full h-56 bg-slate-800"></div>
+          <a
+            className="proyecto w-1/3 border-[#D95276] border-2 rounded-md"
+            href="https://github.com/thxare/feria-maipo-web"
+          >
+            <div className="w-full h-56">
+              <img src="FeriaMaipoLogo.png" />
+            </div>
             <div className="w-full p-4">
-              <h3 className="text-[rgb(217,82,118)]">Feria maipo</h3>
+              <h3 className="text-[rgb(217,82,118)]">Feria Maipo Web</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti laboriosam quod suscipit.
+                Plataforma web conecta vendedores y compradores de frutas y
+                verduras. Los vendedores pueden publicar sus productos y
+                los compradores pueden explorar y adquirir una variedad de
+                opciones deliciosas.
               </p>
             </div>
-          </div>
+          </a>
 
           <div className="proyecto w-1/3 border-[#D95276] border-2 rounded-md ">
             <div className="w-full h-56 bg-slate-800"></div>

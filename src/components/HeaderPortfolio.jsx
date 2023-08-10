@@ -29,7 +29,11 @@ export const HeaderPortfolio = () => {
                 </a>
               </li>
               <li>
-                <a className="hover:border-b-2 hover:border-[#D95276]" href="#">
+                <a
+                  className="hover:border-b-2 hover:border-[#D95276]"
+                  href="#proyectos"
+                  onClick={scrollToSection}
+                >
                   Proyectos
                 </a>
               </li>
