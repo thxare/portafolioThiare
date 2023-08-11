@@ -37,7 +37,7 @@ export const Projects = () => {
           </h2>
         </div>
 
-        <div className="proyectos grid md:grid-cols-4 w-full gap-16 my-14 grid-cols-1 sm:grid-cols-3 px-20">
+        <div className="proyectos grid justify-center md:grid-cols-3 w-full gap-16 my-14 grid-cols-1 sm:grid-cols-3 px-20">
           {proyectos.map((proyecto) => {
             return (
               <ProjectCard

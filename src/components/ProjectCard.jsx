@@ -1,7 +1,7 @@
 export const ProjectCard = ({ title, description, img, url }) => {
   return (
     <a
-      className="proyecto w-full border-[#D95276] border-2 rounded-md grid grid-rows-2 hover:shadow-2xl"
+      className="proyecto w-full border-[#D95276] border-2 rounded-md grid grid-rows-2 hover:shadow-2xl mx-auto"
       href={url}
       target="_blank"
     >

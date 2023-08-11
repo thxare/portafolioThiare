@@ -30,7 +30,7 @@ export const Footer = () => {
     }
   };
   return (
-    <footer className="bg-[#431273] w-full h-[700px] flex flex-col justify-center align-middle items-center">
+    <footer className="bg-[#431273] w-full h-[700px] flex flex-col justify-center align-middle items-center" id="contacto">
       <form
         className="flex flex-col w-1/2 gap-y-14"
         ref={form}
