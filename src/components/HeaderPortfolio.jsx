@@ -28,7 +28,7 @@ export const HeaderPortfolio = () => {
               <div className="container mt-4 grid grid-cols-2 grid-rows-2 place-content-center gap-y-3">
                 <div className="buttons w-full grid grid-cols-2 items-center col-span-2 gap-3">
                   <a
-                    className="text-2xl text-white px-6 py-3 bg-[#D95276] hover:bg-[#e8839e] rounded-md font-barlow-semi-light col-span-1"
+                    className="text-2xl text-white px-6 py-3 bg-[#D95276] hover:bg-[#e8839e] rounded-md font-barlow-semi-light col-span-1 text-center"
                     href="./curriculum-espaniol.pdf"
                     download
                   >
