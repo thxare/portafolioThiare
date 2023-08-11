@@ -6,7 +6,7 @@ import { Footer } from "./Footer";
 export const Portafolio = () => {
   return (
     <>
-      <div className="Portafolio flex flex-col">
+      <div className="Portafolio flex flex-col w-full">
         <HeaderPortfolio />
         <Content />
         <Projects />

@@ -2,6 +2,7 @@
   "name": "curved-crater",
   "type": "module",
   "version": "0.0.1",
+  "homepage": "https://thiaresaez.cl/",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

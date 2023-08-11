@@ -1,6 +1,21 @@
+import { ProjectCard } from "./ProjectCard";
+
 export const Projects = () => {
+  const proyectos = [
+    {
+      title: "Feria Maipo Web",
+      description: `Plataforma web conecta vendedores y compradores de frutas y verduras.
+  Los vendedores pueden publicar sus productos y los compradores pueden
+  explorar y adquirir una variedad de opciones deliciosas.`,
+      img: "FeriaMaipoLogo.png",
+      url: "https://github.com/thxare/feria-maipo-web",
+    },
+  ];
   return (
-    <section className="w-full h-[800px] relative bg-[#F9F9F9] mt-40" id="proyectos">
+    <section
+      className="w-full h-fit relative bg-[#F9F9F9] mt-40"
+      id="proyectos"
+    >
       <div className="absolute top-[-115px]">
         <svg
           width="1440"
@@ -15,53 +30,24 @@ export const Projects = () => {
           />
         </svg>
       </div>
-      <div className="contenido flex flex-col px-52">
+      <div className="contenido flex flex-col">
         <div className="flex justify-center">
           <h2 className="inline-block font-barlow-semi text-5xl text-[#505050] border-b-2 border-[#D95276] mt-14">
             Mis Proyectos
           </h2>
         </div>
 
-        <div className="proyectos flex flex-row w-full gap-x-16 mt-14">
-          <a
-            className="proyecto w-1/3 border-[#D95276] border-2 rounded-md"
-            href="https://github.com/thxare/feria-maipo-web"
-          >
-            <div className="w-full h-56">
-              <img src="FeriaMaipoLogo.png" />
-            </div>
-            <div className="w-full p-4">
-              <h3 className="text-[rgb(217,82,118)]">Feria Maipo Web</h3>
-              <p>
-                Plataforma web conecta vendedores y compradores de frutas y
-                verduras. Los vendedores pueden publicar sus productos y
-                los compradores pueden explorar y adquirir una variedad de
-                opciones deliciosas.
-              </p>
-            </div>
-          </a>
-
-          <div className="proyecto w-1/3 border-[#D95276] border-2 rounded-md ">
-            <div className="w-full h-56 bg-slate-800"></div>
-            <div className="w-full p-4">
-              <h3 className="text-[rgb(217,82,118)]">Feria maipo</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti laboriosam quod suscipit.
-              </p>
-            </div>
-          </div>
-
-          <div className="proyecto w-1/3 border-[#D95276] border-2 rounded-md ">
-            <div className="w-full h-56 bg-slate-800"></div>
-            <div className="w-full p-4">
-              <h3 className="text-[rgb(217,82,118)]">Feria maipo</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti laboriosam quod suscipit.
-              </p>
-            </div>
-          </div>
+        <div className="proyectos grid md:grid-cols-4 w-full gap-16 my-14 grid-cols-1 sm:grid-cols-3 px-20">
+          {proyectos.map((proyecto) => {
+            return (
+              <ProjectCard
+                title={proyecto.title}
+                description={proyecto.description}
+                img={proyecto.img}
+                url={proyecto.url}
+              />
+            );
+          })}
         </div>
       </div>
     </section>
